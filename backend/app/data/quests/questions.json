@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "question": "Which celestial body did you choose in the Identity Planet?",
+    "answer": "moon",
+    "success": "Correct. The first star has accepted your answer.",
+    "hint": "Think about what you typed earlier."
+  },
+  {
+    "id": 2,
+    "question": "Which planet carries the birthday letter?",
+    "answer": "andromeda",
+    "success": "Correct. Andromeda glows brighter now.",
+    "hint": "It was one of the Letter Planets."
+  }
+]

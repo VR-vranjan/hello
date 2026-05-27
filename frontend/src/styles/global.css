@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #020617;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  position: relative;
+
+  padding: 24px;
+}
+
+.center-card {
+  width: min(90%, 720px);
+
+  text-align: center;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+.glass-card {
+  padding: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 28px;
+  background: rgba(15, 23, 42, 0.58);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 0 60px rgba(147, 197, 253, 0.16);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  margin: 0 0 18px;
+  letter-spacing: -0.04em;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  color: #93c5fd;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.glow-button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  color: white;
+  background: linear-gradient(135deg, #2563eb, #9333ea);
+  box-shadow: 0 0 35px rgba(147, 197, 253, 0.45);
+}
+
+.cosmic-input {
+  width: min(100%, 420px);
+  padding: 15px 18px;
+  margin-bottom: 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  outline: none;
+  background: rgba(2, 6, 23, 0.55);
+  color: white;
+  text-align: center;
+}

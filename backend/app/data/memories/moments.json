@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "First Star",
+    "date": "A day I remember",
+    "image": "/images/memory/memory1.jpg",
+    "tags": ["beginning", "soft", "special"],
+    "content": "YE PHOTO YAAD H,Tmko pta hrr baar jb jhagda hota aur phir jb agle dinn tmse milte toh mera gussa khtm hojata,ekdum jaise first time, mere liye first memory jaisa kuch nhi,isliye situation kitni bhi buri ho, tm bhi ye algorithm lga skte, hrr dinn hi kuch naya seekhte h tmse,kuch naya jaante h tmhare baare ."
+  },
+  {
+    "id": 2,
+    "title": "Bright Moment",
+    "date": "A moment that stayed",
+    "image": "/images/memory/memory2.jpg",
+    "tags": ["happy", "smile", "warm"],
+    "content": "bright memory toh wahi yaad aa rhi,tmhara saare contest jeetna,greek age,vo hrr practical jisme tmhare mann k chits aane p tm khush hojate,aur sbse special tmhara nvidia interview. Tm kitne nervous the,poori raat mehnat kiye tm.jitne nervous the tm,utna confidence tha hmko tmpe☺️. Tm smile krte toh harr memory bright bann jata Khargosh."
+  }
+]

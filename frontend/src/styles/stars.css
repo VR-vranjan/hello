@@ -1,0 +1,206 @@
+.star-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 6px white,
+    0 0 12px white;
+
+  animation: twinkle infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+.memory-grid {
+  display: flex;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  margin-top: 30px;
+}
+
+.memory-star {
+  width: 140px;
+
+  height: 140px;
+
+  border-radius: 50%;
+
+  background:
+  rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  box-shadow:
+    0 0 20px
+    rgba(
+      147,
+      197,
+      253,
+      0.3
+    );
+}
+
+.memory-star:hover {
+  transform:
+    scale(1.1);
+
+  box-shadow:
+    0 0 35px
+    rgba(
+      147,
+      197,
+      253,
+      0.8
+    );
+}
+
+.memory-star span {
+  margin-top: 10px;
+
+  font-size: 14px;
+
+  text-align: center;
+
+  color: white;
+}
+.memory-popup {
+  margin: 30px auto;
+  padding: 24px;
+  width: min(100%, 520px);
+  border-radius: 22px;
+  background: rgba(15, 23, 42, 0.82);
+  border: 1px solid rgba(147, 197, 253, 0.28);
+  box-shadow: 0 0 35px rgba(147, 197, 253, 0.18);
+}
+
+.memory-popup h3 {
+  margin-top: 0;
+  color: #bfdbfe;
+  font-size: 1.5rem;
+}
+
+.memory-popup p {
+  color: #e2e8f0;
+  line-height: 1.8;
+}
+.memory-image {
+  width: 100%;
+  max-height: 420px;
+
+  object-fit: contain;
+
+  border-radius: 18px;
+
+  margin-bottom: 18px;
+
+  background: rgba(255,255,255,0.04);
+}
+.shooting-stars {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.shooting-star {
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, white, transparent);
+  border-radius: 999px;
+  opacity: 0;
+  transform: rotate(-35deg);
+  animation: shoot 6s linear infinite;
+}
+
+.shooting-star-1 {
+  top: 18%;
+  left: -20%;
+  animation-delay: 1s;
+}
+
+.shooting-star-2 {
+  top: 38%;
+  left: -30%;
+  animation-delay: 3s;
+}
+
+.shooting-star-3 {
+  top: 65%;
+  left: -25%;
+  animation-delay: 5s;
+}
+
+@keyframes shoot {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(0) rotate(-35deg);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+    transform: translateX(130vw) translateY(60vh) rotate(-35deg);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+.ai-narration {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(147, 197, 253, 0.25);
+  color: #bfdbfe;
+  font-style: italic;
+}

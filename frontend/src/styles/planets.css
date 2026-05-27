@@ -1,0 +1,81 @@
+.planet-grid {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.planet-card {
+  width: 170px;
+  min-height: 170px;
+  padding: 22px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(196, 181, 253, 0.25);
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 24px rgba(168, 85, 247, 0.22);
+}
+
+.planet-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.65);
+}
+
+.planet-card h3 {
+  margin: 12px 0 8px;
+  color: #ddd6fe;
+}
+
+.planet-card p {
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.letter-popup {
+  margin: 30px auto;
+  padding: 26px;
+  width: min(100%, 560px);
+  border-radius: 24px;
+  background: rgba(30, 27, 75, 0.78);
+  border: 1px solid rgba(196, 181, 253, 0.35);
+  box-shadow: 0 0 35px rgba(168, 85, 247, 0.24);
+}
+
+.letter-popup h3 {
+  margin-top: 0;
+  color: #ddd6fe;
+  font-size: 1.5rem;
+}
+
+.letter-popup p {
+  color: #f8fafc;
+  line-height: 1.9;
+}
+.letter-image {
+  width: 100%;
+
+  max-width: 100%;
+
+  max-height: 340px;
+
+  object-fit: contain;
+
+  display: block;
+
+  margin: 20px auto;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(196, 181, 253, 0.25);
+
+  box-shadow: 0 0 28px rgba(168, 85, 247, 0.22);
+}
+
+.letter-popup {
+  overflow: hidden;
+}
