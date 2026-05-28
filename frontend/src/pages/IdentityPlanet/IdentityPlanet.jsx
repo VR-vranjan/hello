@@ -7,12 +7,13 @@ function IdentityPlanet() {
   const [celestialBody, setCelestialBody] = useState("");
   const [aiMessage, setAiMessage] = useState("");
   const [loading, setLoading] = useState(false);
-
+  
   const handleAnalyze = async () => {
     if (!celestialBody.trim()) return;
 
     try {
       setLoading(true);
+      localStorage.setItem("celestialBody", celestialBody.trim().toLowerCase());
       const data = await analyzeIdentity(celestialBody);
       setAiMessage(data.message);
     } catch (error) {

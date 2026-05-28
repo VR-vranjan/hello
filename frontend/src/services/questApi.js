@@ -11,6 +11,8 @@ export async function getQuestions() {
 }
 
 export async function checkAnswer(questionId, answer) {
+  const identity = localStorage.getItem("celestialBody");
+
   const response = await fetch(`${API_BASE_URL}/quests/check`, {
     method: "POST",
     headers: {
@@ -19,12 +21,9 @@ export async function checkAnswer(questionId, answer) {
     body: JSON.stringify({
       question_id: questionId,
       answer,
+      identity,   // ✅ REQUIRED
     }),
   });
-
-  if (!response.ok) {
-    throw new Error("Unable to check answer");
-  }
 
   return response.json();
 }
