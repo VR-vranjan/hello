@@ -12,6 +12,7 @@ QUESTIONS_FILE = BASE_DIR / "data" / "quests" / "questions.json"
 class AnswerRequest(BaseModel):
     question_id: int
     answer: str
+    identity: str | None = None
 
 
 @router.get("/")
@@ -38,7 +39,10 @@ def check_answer(request: AnswerRequest):
 
     for q in questions:
         if q["id"] == request.question_id:
-            is_correct = request.answer.strip().lower() == q["answer"].strip().lower()
+
+            user_value = request.identity if request.identity else request.answer
+
+            is_correct = user_value.strip().lower() == q["answer"].strip().lower()
 
             return {
                 "correct": is_correct,
