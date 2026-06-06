@@ -40,9 +40,18 @@ def check_answer(request: AnswerRequest):
     for q in questions:
         if q["id"] == request.question_id:
 
-            user_value = request.identity if request.identity else request.answer
-
-            is_correct = user_value.strip().lower() == q["answer"].strip().lower()
+            if q["id"] == 1:
+                is_correct = (
+                    request.answer.strip().lower()
+                    ==
+                    request.identity.strip().lower()
+                )
+            else:
+                is_correct = (
+                    request.answer.strip().lower()
+                    ==
+                    q["answer"].strip().lower()
+                )
 
             return {
                 "correct": is_correct,
